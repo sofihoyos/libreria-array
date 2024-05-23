@@ -1,23 +1,23 @@
 let libros = [
     {
-    titulo:"Anna y el beso frances",
-    autor:"stephanie Perkins",
-    genero: "juvenil-romantico",
-    idioma: "ingles",
-    precio: "111.628",
-    formato:"tapa blanda",
-    isbn:"9781409579939",
-    descripcion:"Esta historia sigue a Anna, una chica americana que no sabe casi anda de París. Por eso, cuando sus padres le anuncian que pasará un año en un internado de París, la idea no acaba de convencerla. Pero, en la Ciudad del Amor, conoce al chico ideal: Étienne St. Clair. Es listo, encantador y muy guapo. El único problema es que también tiene novia. ¿Conseguirá Anna el ansiado beso de su príncipe azul? El humor y la tensión que se respiran página a página en el debut literario de Stephanie Perkins te atraparán y te llegarán al corazón.",
-    estado: "nuevo", 
-    ubicacion: "casa del libro",
-    fecha_publicacion: "2012",
-    editorial:"Usborne",
-    paginas:"416 paginas",
-    dimensiones:"14.7 x 2.7 x 20.4 cm",
-    peso:"1,05 kg"
+    Título:"Anna y el beso frances",
+    Autor:"stephanie Perkins",
+    Género: "juvenil-romantico",
+    Idioma: "ingles",
+    Precio: "111.628",
+    Formato:"tapa blanda",
+    ISBN:"9781409579939",
+    Descripción:"Esta historia sigue a Anna, una chica americana que no sabe casi anda de París. Por eso, cuando sus padres le anuncian que pasará un año en un internado de París, la idea no acaba de convencerla. Pero, en la Ciudad del Amor, conoce al chico ideal: Étienne St. Clair. Es listo, encantador y muy guapo. El único problema es que también tiene novia. ¿Conseguirá Anna el ansiado beso de su príncipe azul? El humor y la tensión que se respiran página a página en el debut literario de Stephanie Perkins te atraparán y te llegarán al corazón.",
+    Estado: "nuevo", 
+    Ubicación: "casa del libro",
+    Fecha_Publicación: "2012",
+    Editorial:"Usborne",
+    Páginas:"416 paginas",
+    Dimensiones:"14.7 x 2.7 x 20.4 cm",
+    Peso:"1,05 kg"
     },
     {
-    titulo: "Cien años de soledad",
+    Título: "Cien años de soledad",
     Autor: "Gabriel García Márquez",
     Género: "Realismo mágico",
     Idioma: "Español",
@@ -34,7 +34,7 @@ let libros = [
     Peso: "600 g"
     },
     {
-    titulo:"El amor en los tiempos del cólera",
+    Título:"El amor en los tiempos del cólera",
     Autor: "Gabriel García Márquez",
     Género: "Romance",
     Idioma: "Español",
@@ -83,7 +83,7 @@ let libros = [
     Editorial: "Planeta",
     Páginas: "496",
     Dimensiones: "14 x 21 cm",
-    Peso: "600 g",
+    Peso: "600 g"
     },
     {
     Título: "Ready Player One",
@@ -100,7 +100,7 @@ let libros = [
     Editorial: "Ediciones B",
     Páginas: "464",
     Dimensiones: "15 x 22 cm",
-    Peso: "600 g ",
+    Peso: "600 g "
     },
     {
     Título: "Los juegos del hambre",
@@ -188,40 +188,219 @@ let libros = [
     Peso:" 900 g"
     },
     {
-        
+    Título: "La ciudad y los perros",
+    Autor: "Mario Vargas Llosa",
+    Género: "Novela",
+    Idioma: "Español",
+    Precio: "$17.00",
+    Formato: "Pasta blanda",
+    ISBN: "978-84-397-0287-8",
+    Descripción: "La historia de un grupo de estudiantes en un colegio militar en Lima y su lucha por la supervivencia.",
+    Estado: "Nuevo",
+    Ubicación: "Sección de Novelas Latinoamericanas",
+    Fecha_Publicación: "1963",
+    Editorial: "Editorial Seix Barral",
+    Páginas: "496",
+    Dimensiones: "14 x 21 cm",
+    Peso: "600 g"
+    },
+    {
+    Título: "Divergente",
+    Autor: "Veronica Roth",
+    Género: "Distopía, Ciencia ficción",
+    Idioma: "Español",
+    Precio: "$15.00",
+    Formato: "Tapa blanda",
+    ISBN: "978-84-272-0213-5",
+    Descripción:" En un mundo dividido en facciones basadas en virtudes humanas,Tris Prior descubre un peligroso secreto y debe decidir en quién confiar.",
+    Estado: "Nuevo",
+    Ubicación: "Distopías y Ciencia Ficción",
+    Fecha_Publicación: "2011",
+    Editorial: "RBA Molino",
+    Páginas: "464",
+    Dimensiones: "15 x 22 cm",
+    Peso: "500 g"
+    },
+    {
+    Título: "Insurgente",
+    Autor: "Veronica Roth",
+    Género: "Distopía, Ciencia ficción",
+    Idioma: "Español",
+    Precio: "$16.00",
+    Formato: "Tapa blanda",
+    ISBN: "978-84-272-0214-2",
+    Descripción: "Tris Prior debe enfrentarse a las consecuencias de sus decisiones mientras una guerra se desata entre las facciones.",
+    Estado: "Nuevo",
+    Ubicación: "Distopías y Ciencia Ficción",
+    Fecha_Publicación: "2012",
+    Editorial: "RBA Molino",
+    Páginas: "464",
+    Dimensiones: "15 x 22 cm",
+    Peso: "500 g"
+    },
+    {
+    Título: "Leal",
+    Autor: "Veronica Roth",
+    Género: "Distopía, Ciencia ficción",
+    Idioma: "Español",
+    Precio: "$17.00",
+    Formato: "Tapa blanda",
+    ISBN:" 978-84-272-0215-9",
+    Descripción: "Tris y Cuatro descubren verdades sorprendentes sobre su mundo y deben decidir cómo actuar frente a la revelación de una nueva realidad.",
+    Estado: "Nuevo",
+    Ubicación: "Distopías y Ciencia Ficción",
+    Fecha_Publicación: "2013",
+    Editorial: "RBA Molino",
+    Páginas: "496",
+    Dimensiones: "15 x 22 cm",
+    Peso: "500 g"
+    },
+    {
+    Título: "Cazadores de sombras: Ciudad de hueso",
+    Autor: "Cassandra Clare",
+    Género: "Fantasía urbana",
+    Idioma: "Español",
+    Precio: "$20.00",
+    Formato: "Tapa blanda",
+    ISBN: "978-84-253-4194-8",
+    Descripción: "Clary Fray descubre un mundo oculto lleno de demonios y cazadores de sombras.",
+    Estado: "Nuevo",
+    Ubicación: "Fantasía y Aventura",
+    Fecha_Publicación: "2007",
+    Editorial: "Destino",
+    Páginas: "512",
+    Dimensiones: "14 x 21 cm",
+    Peso: "700 g"
+    },
+    {
+    Título: "Cazadores de sombras: Ciudad de ceniza",
+    Autor: "Cassandra Clare",
+    Género: "Fantasía urbana",
+    Idioma: "Español",
+    Precio: "$20.00",
+    Formato: "Tapa blanda",
+    ISBN: "978-84-253-4195-5",
+    Descripción: "Clary continúa su lucha contra los demonios mientras descubre más sobre su pasado.",
+    Estado: "Nuevo",
+    Ubicación: "Fantasía y Aventura",
+    Fecha_Publicación:" 2008",
+    Editorial: "Destino",
+    Páginas: "464",
+    Dimensiones: "14 x 21 cm",
+    Peso: "650 g"
+    },
+    {
+    Título: "Cazadores de sombras: Ciudad de cristal",
+    Autor: "Cassandra Clare",
+    Género: "Fantasía urbana",
+    Idioma: "Español",
+    Precio: "$22.00",
+    Formato: "Tapa blanda",
+    ISBN: "978-84-253-4196-2",
+    Descripción: "Clary debe viajar a la ciudad ancestral de los cazadores de sombras para salvar a su madre.",
+    Estado:" Nuevo",
+    Ubicación: "Fantasía y Aventura",
+    Fecha_Publicación: "2009",
+    Editorial: "Destino",
+    Páginas: "544",
+    Dimensiones: "14 x 21 cm",
+    Peso: "700 g"
+    },
+    {
+    Título: "Cazadores de sombras: Ciudad de los ángeles caídos",
+    Autor: "Cassandra Clare",
+    Género: "Fantasía urbana",
+    Idioma: "Español",
+    Precio: "$21.00",
+    Formato: "Tapa blanda",
+    ISBN:" 978-84-253-4197-9",
+    Descripción: "La paz parece estar a la vista, pero nuevas amenazas surgen y Clary debe enfrentarlas.",
+    Estado: "Nuevo",
+    Ubicación: "Fantasía y Aventura",
+    Fecha_Publicación: "2011",
+    Editorial: "Destino",
+    Páginas: "432",
+    Dimensiones: "14 x 21 cm",
+    Peso: "600 g"
+    },
+    {
+    Título: "Cazadores de sombras: Ciudad de las almas perdidas",
+    Autor: "Cassandra Clare",
+    Género: "Fantasía urbana",
+    Idioma: "Español",
+    Precio: "$21.00",
+    Formato: "Tapa blanda",
+    ISBN: "978-84-253-4198-6",
+    Descripción: "Clary y sus amigos deben salvar a Jace de una influencia maligna que lo controla.",
+    Estado: "Nuevo",
+    Ubicación: "Fantasía y Aventura",
+    Fecha_Publicación: "2012",
+    Editorial: "Destino",
+    Páginas: "544",
+    Dimensiones: "14 x 21 cm",
+    Peso: "700 g " 
     }
-
 ];
-
-
-
-
-
-
-let nuevoLibro={
-    titulo:"Anna y el beso frances",
-    autor:"stephanie Perkins",
-    genero: "juvenil-romantico",
-    idioma: "ingles",
-    precio: "111.628",
-    formato:"tapa blanda",
-    isbn:"9781409579939",
-    descripcion:"Esta historia sigue a Anna, una chica americana que no sabe casi anda de París. Por eso, cuando sus padres le anuncian que pasará un año en un internado de París, la idea no acaba de convencerla. Pero, en la Ciudad del Amor, conoce al chico ideal: Étienne St. Clair. Es listo, encantador y muy guapo. El único problema es que también tiene novia. ¿Conseguirá Anna el ansiado beso de su príncipe azul? El humor y la tensión que se respiran página a página en el debut literario de Stephanie Perkins te atraparán y te llegarán al corazón.",
-    estado: "nuevo", 
-    ubicacion: "casa del libro",
-    fecha_publicacion: "6 de noviembre del 2018",
-    editorial:"Usborne",
-    paginas:"416 paginas",
-    dimensiones:"14.7 x 2.7 x 20.4 cm",
-    peso:"1,05 kg"
+let continuar="si",menu;
+while (continuar === "si") {
+menu="MENU\n"
+menu+="1- Mostrar la pila de libros\n"
+menu+="2- Agregar un nuevo libro a la pila\n"
+menu+="3- Borrar un libro de la pila de libros\n\n"
+menu+="Ingrese el numero de lo que desea hacer"
+let decision=parseInt(prompt(menu));
+switch (decision) {
+    case 1:
+        libros.forEach((libro,index)=>{
+            console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
+            + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
+            + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
+            + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
+            + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
+        })
+    break;
+    case 2:
+        let nuevoLibro = {
+            Título: prompt("ingresa el titulo del libro"),
+            Autor: prompt("ingresa el autor del libro"),
+            Género: prompt("ingresa el genero del libro"),
+            Idioma: prompt("ingresa el idioma del libro"),
+            Precio:prompt("ingresa el precio del libro"),
+            Formato: prompt("ingresa el formato del libro"),
+            ISBN: prompt("ingresa el isbn del libro"),
+            Descripción: prompt("ingresa la descripcion del libro"),
+            Estado: prompt("ingresa el estado del libro"),
+            Ubicación: prompt("ingresa la ubicaion del libro"),
+            Fecha_Publicación: prompt("ingresa la fecha de publicacion del libro "),
+            Editorial: prompt("ingresa la editorial del libro"),
+            Páginas:prompt("ingresa las paginas del libro"),
+            Dimensiones: prompt("ingresa las dimensiones del libro"),
+            Peso: prompt("ingresa el peso del libro")
+        }
+        libros.push(nuevoLibro)
+        console.log("agregado con exito");
+        libros.forEach((libro,index)=>{
+        console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
+            + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
+            + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
+            + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
+            + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
+        })
+    break;
+    case 3:
+        let indice=parseInt(prompt("ingresa el numero de el libro que quieres borrar"))
+        libros.splice(indice, 1)
+        console.log("borrado con exito");
+        libros.forEach((libro,index)=>{
+            console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
+            + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
+            + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
+            + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
+            + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
+        })
+    break;
+    default:
+        break;
+    }
+continuar= prompt("Deseas continuar si/no")
 }
-
-libros.push(nuevoLibro)
-console.log(libros)
-libros.splice(1,1)
-console.log(libros);
-
-
-// libros.forEach((libro,index) =>{
-//     console.log(${index +1} titulo : ${libro.titulo});
-// })
