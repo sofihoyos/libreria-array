@@ -28,7 +28,7 @@ let libros = [
     Estado: "Nuevo",
     Ubicación: "Biblioteca Principal",
     Fecha_Publicación: "1967",
-    Editorial: "Editorial Sudamericana",
+    Editorial:"Usborne",
     Páginas: "432",
     Dimensiones: "15 x 23 cm",
     Peso: "600 g"
@@ -45,7 +45,7 @@ let libros = [
     Estado: "Usado (buen estado)",
     Ubicación: "Estantería 2",
     Fecha_Publicación: "1985",
-    Editorial: "Penguin Random House",
+    Editorial:"Usborne",
     Páginas: "368",
     Dimensiones: "12 x 18 cm",
     Peso: "400 g"
@@ -62,7 +62,7 @@ let libros = [
     Estado: "Nuevo",
     Ubicación: "Fantasía y Ciencia Ficción",
     Fecha_Publicación: "2007",
-    Editorial: "Plaza & Janés",
+    Editorial:"Usborne",
     Páginas: "864",
     Dimensiones: "16 x 24 cm",
     Peso: "900 g"
@@ -80,7 +80,7 @@ let libros = [
     Estado: "Nuevo",
     Ubicación: "Mejores Ventas",
     Fecha_Publicación:" 2015",
-    Editorial: "Planeta",
+    Editorial:"Usborne",
     Páginas: "496",
     Dimensiones: "14 x 21 cm",
     Peso: "600 g"
@@ -114,7 +114,7 @@ let libros = [
     Estado: "Nuevo",
     Ubicación: "Distopías y Ciencia Ficción",
     Fecha_Publicación: "2008",
-    Editorial: "Molino",
+    Editorial: "Ediciones B",
     Páginas: "416",
     Dimensiones: "13 x 20 cm",
     Peso: "500 g" 
@@ -131,7 +131,7 @@ let libros = [
     Estado:" Nuevo",
     Ubicación: "Novelas Policiacas",
     Fecha_Publicación: "2005",
-    Editorial:" Destino",
+    Editorial: "Ediciones B",
     Páginas: "672",
     Dimensiones: "16 x 24 cm",
     Peso: "900 g "  
@@ -148,7 +148,7 @@ let libros = [
     Estado: "Usado (buen estado)",
     Ubicación: "Sección de Clásicos",
     Fecha_Publicación: "1952",
-    Editorial: "Debolsillo",
+    Editorial: "Ediciones B",
     Páginas: "128",
     Dimensiones: "12 x 18 cm",
     Peso: "200 g"
@@ -165,7 +165,7 @@ let libros = [
     Estado: "Usado (buen estado)",
     Ubicación: "Sección de Aventuras",
     Fecha_Publicación: "2006",
-    Editorial: "Mondadori",
+    Editorial: "Ediciones B",
     Páginas: "256",
     Dimensiones: "13 x 20 cm",
     Peso: "400 g"
@@ -199,7 +199,7 @@ let libros = [
     Estado: "Nuevo",
     Ubicación: "Sección de Novelas Latinoamericanas",
     Fecha_Publicación: "1963",
-    Editorial: "Editorial Seix Barral",
+    Editorial: "Anagrama",
     Páginas: "496",
     Dimensiones: "14 x 21 cm",
     Peso: "600 g"
@@ -216,7 +216,7 @@ let libros = [
     Estado: "Nuevo",
     Ubicación: "Distopías y Ciencia Ficción",
     Fecha_Publicación: "2011",
-    Editorial: "RBA Molino",
+    Editorial: "Anagrama",
     Páginas: "464",
     Dimensiones: "15 x 22 cm",
     Peso: "500 g"
@@ -233,7 +233,7 @@ let libros = [
     Estado: "Nuevo",
     Ubicación: "Distopías y Ciencia Ficción",
     Fecha_Publicación: "2012",
-    Editorial: "RBA Molino",
+    Editorial: "Anagrama",
     Páginas: "464",
     Dimensiones: "15 x 22 cm",
     Peso: "500 g"
@@ -250,7 +250,7 @@ let libros = [
     Estado: "Nuevo",
     Ubicación: "Distopías y Ciencia Ficción",
     Fecha_Publicación: "2013",
-    Editorial: "RBA Molino",
+    Editorial: "Anagrama",
     Páginas: "496",
     Dimensiones: "15 x 22 cm",
     Peso: "500 g"
@@ -404,3 +404,105 @@ switch (decision) {
     }
 continuar= prompt("Deseas continuar si/no")
 }
+
+// MANEJO DE ARRAY METHODS
+let titulo = libros.map((libro)=>{
+    return{
+        Título: libro.Título,
+        Autor: libro.Autor,
+        Editorial: libro.Editorial,
+        Precio: libro.Precio
+    }
+}
+)
+console.table(titulo)
+
+titulo = libros.map((libro)=>{
+    return{
+        Título: libro.Título,
+        Idioma: libro.Idioma
+    }
+}
+)
+console.table(titulo)
+
+titulo = libros.map((libro)=>{
+    return{
+        Título: libro.Título,
+        Estado: libro.Estado
+    }
+}
+)
+console.table(titulo)
+
+titulo = libros.map((libro)=>{
+    return{
+        Título: libro.Título,
+        ISBN: libro.ISBN
+    }
+}
+)
+console.table(titulo)
+
+titulo = libros.map((libro)=>{
+    return{
+        Título: libro.Título,
+        Páginas: libro.Páginas
+    }
+}
+)
+console.table(titulo)
+
+titulo = libros.map((libro)=>{
+    return{
+        Título: libro.Título,
+        Dimensiones: libro.Dimensiones
+    }
+}
+)
+console.table(titulo)
+
+titulo = libros.map((libro)=>{
+    return{
+        Título: libro.Título,
+        Fecha_Publicación: libro.Fecha_Publicación
+    }
+}
+)
+console.table(titulo)
+
+titulo = libros.map((libro)=>{
+    return{
+        Título: libro.Título,
+        Precio: libro.Precio
+    }
+}
+)
+console.table(titulo)
+
+titulo = libros.map((libro)=>{
+    return{
+        Título: libro.Título,
+        Peso: libro.Peso
+    }
+}
+)
+console.table(titulo)
+
+titulo = libros.map((libro)=>{
+    return{
+        Título: libro.Título,
+        Ubicación: libro.Ubicación
+    }
+}
+)
+console.table(titulo)
+
+titulo = libros.map((libro)=>{
+    return{
+        Título: libro.Título,
+        Género: libro.Género
+    }
+}
+)
+console.table(titulo)
