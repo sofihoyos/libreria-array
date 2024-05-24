@@ -547,3 +547,60 @@ console.table(librosConMayorPaginas);
 // Manejo de Array methods sort()
 let librosConMayorNumeroPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas);
 console.table(librosConMayorNumeroPaginas)
+
+// Manejo Array Methods encadenados.
+let librosCarosPorTitulo=libros.filter((libro)=>{
+    return libro.Precio > 11;
+})
+.map ((libro) => {
+    return{
+        Título: libro.Título,
+        Autor: libro.Autor,
+        Precio: libro.Precio
+    }
+
+}) 
+.sort((a, b)=> b.Precio - a.Precio)
+console.table(librosCarosPorTitulo)
+
+//
+let librosConMenorPaginas=libros.filter((libro)=>{
+    return libro.Páginas > 100;
+})
+.map ((libro) => {
+    return{
+        Titulo: libro.Título,
+        Autor: libro.Autor,
+        Editorial:libro.Editorial,
+        Paginas: libro.Páginas
+    }
+
+}) 
+console.table(librosConMenorPaginas)
+
+//
+let librosCarosPrecio=libros.filter((libro)=>{
+    return libro.Precio > 20;
+})
+.map ((libro) => {
+    return{
+        Título: libro.Título,
+        Autor: libro.Autor,
+        Precio: libro.Precio
+    }
+
+}) 
+.sort((a, b)=> b.Precio - a.Precio)
+console.table(librosCarosPrecio)
+
+//
+let LibrosResumenAltoPaginas= libros.map ((libro) => {
+    return{
+        Titulo: libro.Título,
+        Autor: libro.Autor,
+        Editorial:libro.Editorial,
+        Paginas: libro.Páginas
+    }
+}) 
+.sort((a, b)=> b.Páginas - a.Páginas);
+console.table(librosConMenorPaginas)
