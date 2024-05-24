@@ -341,266 +341,219 @@ let libros = [
     Peso: "700 g " 
     }
 ];
-// let continuar="si",menu;
-// while (continuar === "si") {
-// menu="MENU\n"
-// menu+="1- Mostrar la pila de libros\n"
-// menu+="2- Agregar un nuevo libro a la pila\n"
-// menu+="3- Borrar un libro de la pila de libros\n\n"
-// menu+="Ingrese el numero de lo que desea hacer"
-// let decision=parseInt(prompt(menu));
-// switch (decision) {
-//     case 1:
-//         libros.forEach((libro,index)=>{
-//             console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
-//             + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
-//             + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
-//             + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
-//             + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
-//         })
-//     break;
-//     case 2:
-//         let nuevoLibro = {
-//             Título: prompt("ingresa el titulo del libro"),
-//             Autor: prompt("ingresa el autor del libro"),
-//             Género: prompt("ingresa el genero del libro"),
-//             Idioma: prompt("ingresa el idioma del libro"),
-//             Precio:prompt("ingresa el precio del libro"),
-//             Formato: prompt("ingresa el formato del libro"),
-//             ISBN: prompt("ingresa el isbn del libro"),
-//             Descripción: prompt("ingresa la descripcion del libro"),
-//             Estado: prompt("ingresa el estado del libro"),
-//             Ubicación: prompt("ingresa la ubicaion del libro"),
-//             Fecha_Publicación: prompt("ingresa la fecha de publicacion del libro "),
-//             Editorial: prompt("ingresa la editorial del libro"),
-//             Páginas:prompt("ingresa las paginas del libro"),
-//             Dimensiones: prompt("ingresa las dimensiones del libro"),
-//             Peso: prompt("ingresa el peso del libro")
-//         }
-//         libros.push(nuevoLibro)
-//         console.log("agregado con exito");
-//         libros.forEach((libro,index)=>{
-//         console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
-//             + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
-//             + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
-//             + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
-//             + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
-//         })
-//     break;
-//     case 3:
-//         let indice=parseInt(prompt("ingresa el numero de el libro que quieres borrar"))
-//         libros.splice(indice, 1)
-//         console.log("borrado con exito");
-//         libros.forEach((libro,index)=>{
-//             console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
-//             + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
-//             + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
-//             + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
-//             + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
-//         })
-//     break;
-//     default:
-//         break;
-//     }
-// continuar= prompt("Deseas continuar si/no")
-// }
-
-// MANEJO DE ARRAY METHODS
-let titulo = libros.map((libro)=>{
-    return{
-        Título: libro.Título,
-        Autor: libro.Autor,
-        Editorial: libro.Editorial,
-        Precio: libro.Precio
+let continuar="si",menu;
+while (continuar === "si") {
+menu="MENU\n"
+menu+="1- Mostrar la pila de libros\n"
+menu+="2- Agregar un nuevo libro a la pila\n"
+menu+="3- Borrar un libro de la pila de libros\n"
+menu+="4- Listar libros\n"
+menu+="5- los resumenes de este segmento\n\n"
+menu+="Ingrese el numero de lo que desea hacer"
+let decision=parseInt(prompt(menu));
+switch (decision) {
+    case 1:
+        libros.forEach((libro,index)=>{
+            console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
+            + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
+            + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
+            + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
+            + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
+        })
+    break;
+    case 2:
+        let nuevoLibro = {
+            Título: prompt("ingresa el titulo del libro"),
+            Autor: prompt("ingresa el autor del libro"),
+            Género: prompt("ingresa el genero del libro"),
+            Idioma: prompt("ingresa el idioma del libro"),
+            Precio:prompt("ingresa el precio del libro"),
+            Formato: prompt("ingresa el formato del libro"),
+            ISBN: prompt("ingresa el isbn del libro"),
+            Descripción: prompt("ingresa la descripcion del libro"),
+            Estado: prompt("ingresa el estado del libro"),
+            Ubicación: prompt("ingresa la ubicaion del libro"),
+            Fecha_Publicación: prompt("ingresa la fecha de publicacion del libro "),
+            Editorial: prompt("ingresa la editorial del libro"),
+            Páginas:prompt("ingresa las paginas del libro"),
+            Dimensiones: prompt("ingresa las dimensiones del libro"),
+            Peso: prompt("ingresa el peso del libro")
+        }
+        libros.push(nuevoLibro)
+        console.log("agregado con exito");
+        libros.forEach((libro,index)=>{
+        console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
+            + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
+            + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
+            + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
+            + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
+        })
+    break;
+    case 3:
+        let indice=parseInt(prompt("ingresa el numero de el libro que quieres borrar"))
+        libros.splice(indice, 1)
+        console.log("borrado con exito");
+        libros.forEach((libro,index)=>{
+            console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
+            + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
+            + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
+            + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
+            + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
+        })
+    break;
+    case 4:
+        // MANEJO DE ARRAY METHODS
+        let titulo = libros.map((libro)=>{
+            return{
+                Título: libro.Título,
+                Autor: libro.Autor,
+                Editorial: libro.Editorial,
+                Precio: libro.Precio
+            }})
+            console.table(titulo)
+        titulo = libros.map((libro)=>{
+            return{
+                Título: libro.Título,
+                Idioma: libro.Idioma
+            }})
+            console.table(titulo)
+        titulo = libros.map((libro)=>{
+            return{
+                Título: libro.Título,
+                Estado: libro.Estado
+            }})
+            console.table(titulo)
+        titulo = libros.map((libro)=>{
+            return{
+                Título: libro.Título,
+                ISBN: libro.ISBN
+            }})
+            console.table(titulo)
+        titulo = libros.map((libro)=>{
+            return{
+                Título: libro.Título,
+                Páginas: libro.Páginas
+            }})
+            console.table(titulo)
+        titulo = libros.map((libro)=>{
+            return{
+                Título: libro.Título,
+                Dimensiones: libro.Dimensiones
+            }})
+            console.table(titulo)
+        titulo = libros.map((libro)=>{
+            return{
+                Título: libro.Título,
+                Fecha_Publicación: libro.Fecha_Publicación
+            }})
+            console.table(titulo)
+        titulo = libros.map((libro)=>{
+            return{
+                Título: libro.Título,
+                Precio: libro.Precio
+            }})
+            console.table(titulo)
+        titulo = libros.map((libro)=>{
+            return{
+                Título: libro.Título,
+                Peso: libro.Peso
+            }})
+            console.table(titulo)
+        titulo = libros.map((libro)=>{
+            return{
+                Título: libro.Título,
+                Ubicación: libro.Ubicación
+            }})
+            console.table(titulo)
+        titulo = libros.map((libro)=>{
+            return{
+                Título: libro.Título,
+                Género: libro.Género
+            }})
+            console.table(titulo)
+        // Manejo de Array Methods + spreed operator.
+        let librosConDescuentos = libros.map((libros)=>{
+            return{
+                ...libros,
+                Descuento:20,
+            }})
+            console.table(librosConDescuentos)
+        let descuento = librosConDescuentos.map((libro)=>{
+            return{
+                Titulo: libro.Título,
+                Autor: libro.Autor,
+                Editorial:libro.Editorial,
+                Precio: libro.Precio,
+                Descuento: libro.Descuento
+            }});
+            console.table(descuento);
+    break;
+    case 5:
+        // Manejo de Array methods Filter()
+        let librosCaros = libros.filter((libro)=>{
+            return libro.Precio > 50;
+        });
+        console.table(librosCaros);
+        let librosConMayorPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas)
+        .map((libro)=>{
+            return{
+                Titulo: libro.Título,
+                Autor: libro.Autor,
+                Editorial:libro.Editorial,
+                Paginas: libro.Páginas
+            }});
+            console.table(librosConMayorPaginas);
+        // Manejo de Array methods sort()
+        let librosConMayorNumeroPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas);
+        console.table(librosConMayorNumeroPaginas)
+        // Manejo Array Methods encadenados.
+        let librosCarosPorTitulo=libros.filter((libro)=>{
+            return libro.Precio > 11;
+        })
+        .map ((libro) => {
+            return{
+                Título: libro.Título,
+                Autor: libro.Autor,
+                Precio: libro.Precio
+            }}) 
+            .sort((a, b)=> b.Precio - a.Precio)
+            console.table(librosCarosPorTitulo)
+        //
+        let librosConMenorPaginas=libros.filter((libro)=>{
+            return libro.Páginas > 100;
+        })
+        .map ((libro) => {
+            return{
+                Titulo: libro.Título,
+                Autor: libro.Autor,
+                Editorial:libro.Editorial,
+                Paginas: libro.Páginas
+            }}) 
+            console.table(librosConMenorPaginas)
+        //
+        let librosCarosPrecio=libros.filter((libro)=>{
+            return libro.Precio > 20;})
+            .map ((libro) => {
+                return{
+                    Título: libro.Título,
+                    Autor: libro.Autor,
+                    Precio: libro.Precio
+                }}) 
+            .sort((a, b)=> b.Precio - a.Precio)
+            console.table(librosCarosPrecio);
+        //
+        let LibrosResumenAltoPaginas= libros.map ((libro) => {
+            return{
+                Titulo: libro.Título,
+                Autor: libro.Autor,
+                Editorial:libro.Editorial,
+                Paginas: libro.Páginas
+            }}) 
+            .sort((a, b)=> b.Páginas - a.Páginas);
+            console.table(LibrosResumenAltoPaginas)
+    break;
+    default:
+        break;
     }
-})
-console.table(titulo)
-
-titulo = libros.map((libro)=>{
-    return{
-        Título: libro.Título,
-        Idioma: libro.Idioma
-    }
+continuar= prompt("Deseas continuar si/no")
 }
-)
-console.table(titulo)
-
-titulo = libros.map((libro)=>{
-    return{
-        Título: libro.Título,
-        Estado: libro.Estado
-    }
-}
-)
-console.table(titulo)
-
-titulo = libros.map((libro)=>{
-    return{
-        Título: libro.Título,
-        ISBN: libro.ISBN
-    }
-}
-)
-console.table(titulo)
-
-titulo = libros.map((libro)=>{
-    return{
-        Título: libro.Título,
-        Páginas: libro.Páginas
-    }
-}
-)
-console.table(titulo)
-
-titulo = libros.map((libro)=>{
-    return{
-        Título: libro.Título,
-        Dimensiones: libro.Dimensiones
-    }
-}
-)
-console.table(titulo)
-
-titulo = libros.map((libro)=>{
-    return{
-        Título: libro.Título,
-        Fecha_Publicación: libro.Fecha_Publicación
-    }
-}
-)
-console.table(titulo)
-
-titulo = libros.map((libro)=>{
-    return{
-        Título: libro.Título,
-        Precio: libro.Precio
-    }
-}
-)
-console.table(titulo)
-
-titulo = libros.map((libro)=>{
-    return{
-        Título: libro.Título,
-        Peso: libro.Peso
-    }
-}
-)
-console.table(titulo)
-
-titulo = libros.map((libro)=>{
-    return{
-        Título: libro.Título,
-        Ubicación: libro.Ubicación
-    }
-}
-)
-console.table(titulo)
-
-titulo = libros.map((libro)=>{
-    return{
-        Título: libro.Título,
-        Género: libro.Género
-    }
-}
-)
-console.table(titulo)
-
-// Manejo de Array Methods + spreed operator.
-let librosConDescuentos = libros.map((libros)=>{
-    return{
-        ...libros,
-        Descuento:20,
-    }
-}
-)
-console.table(librosConDescuentos)
-
-let descuento = librosConDescuentos.map((libro)=>{
-    return{
-        Titulo: libro.Título,
-        Autor: libro.Autor,
-        Editorial:libro.Editorial,
-        Precio: libro.Precio,
-        Descuento: libro.Descuento
-    }
-});
-console.table(descuento);
-
-// Manejo de Array methods Filter()
-let librosCaros = libros.filter((libro)=>{
-    return libro.Precio > 50;
-});
-console.table(librosCaros);
-
-let librosConMayorPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas)
-.map((libro)=>{
-    return{
-        Titulo: libro.Título,
-        Autor: libro.Autor,
-        Editorial:libro.Editorial,
-        Paginas: libro.Páginas
-    }
-});
-console.table(librosConMayorPaginas);
-
-// Manejo de Array methods sort()
-let librosConMayorNumeroPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas);
-console.table(librosConMayorNumeroPaginas)
-
-// Manejo Array Methods encadenados.
-let librosCarosPorTitulo=libros.filter((libro)=>{
-    return libro.Precio > 11;
-})
-.map ((libro) => {
-    return{
-        Título: libro.Título,
-        Autor: libro.Autor,
-        Precio: libro.Precio
-    }
-
-}) 
-.sort((a, b)=> b.Precio - a.Precio)
-console.table(librosCarosPorTitulo)
-
-//
-let librosConMenorPaginas=libros.filter((libro)=>{
-    return libro.Páginas > 100;
-})
-.map ((libro) => {
-    return{
-        Titulo: libro.Título,
-        Autor: libro.Autor,
-        Editorial:libro.Editorial,
-        Paginas: libro.Páginas
-    }
-
-}) 
-console.table(librosConMenorPaginas)
-
-//
-let librosCarosPrecio=libros.filter((libro)=>{
-    return libro.Precio > 20;
-})
-.map ((libro) => {
-    return{
-        Título: libro.Título,
-        Autor: libro.Autor,
-        Precio: libro.Precio
-    }
-
-}) 
-.sort((a, b)=> b.Precio - a.Precio)
-console.table(librosCarosPrecio)
-
-//
-let LibrosResumenAltoPaginas= libros.map ((libro) => {
-    return{
-        Titulo: libro.Título,
-        Autor: libro.Autor,
-        Editorial:libro.Editorial,
-        Paginas: libro.Páginas
-    }
-}) 
-.sort((a, b)=> b.Páginas - a.Páginas);
-console.table(librosConMenorPaginas)
