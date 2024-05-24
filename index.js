@@ -4,7 +4,7 @@ let libros = [
     Autor:"stephanie Perkins",
     Género: "juvenil-romantico",
     Idioma: "ingles",
-    Precio: "111.628",
+    Precio: 25.00,
     Formato:"tapa blanda",
     ISBN:"9781409579939",
     Descripción:"Esta historia sigue a Anna, una chica americana que no sabe casi anda de París. Por eso, cuando sus padres le anuncian que pasará un año en un internado de París, la idea no acaba de convencerla. Pero, en la Ciudad del Amor, conoce al chico ideal: Étienne St. Clair. Es listo, encantador y muy guapo. El único problema es que también tiene novia. ¿Conseguirá Anna el ansiado beso de su príncipe azul? El humor y la tensión que se respiran página a página en el debut literario de Stephanie Perkins te atraparán y te llegarán al corazón.",
@@ -12,7 +12,7 @@ let libros = [
     Ubicación: "casa del libro",
     Fecha_Publicación: "2012",
     Editorial:"Usborne",
-    Páginas:"416 paginas",
+    Páginas:416,
     Dimensiones:"14.7 x 2.7 x 20.4 cm",
     Peso:"1,05 kg"
     },
@@ -21,7 +21,7 @@ let libros = [
     Autor: "Gabriel García Márquez",
     Género: "Realismo mágico",
     Idioma: "Español",
-    Precio: "$20.00",
+    Precio: 20.00,
     Formato: "Tapa dura",
     ISBN: "978-84-376-0494-7",
     Descripción: "La historia de la familia Buendía en el pueblo ficticio de Macondo.",
@@ -29,7 +29,7 @@ let libros = [
     Ubicación: "Biblioteca Principal",
     Fecha_Publicación: "1967",
     Editorial:"Usborne",
-    Páginas: "432",
+    Páginas: 432,
     Dimensiones: "15 x 23 cm",
     Peso: "600 g"
     },
@@ -38,7 +38,7 @@ let libros = [
     Autor: "Gabriel García Márquez",
     Género: "Romance",
     Idioma: "Español",
-    Precio: "$15.00",
+    Precio: 15.00,
     Formato: "Bolsillo",
     ISBN: "978-84-376-0495-4",
     Descripción: "Una historia de amor que perdura a lo largo de décadas.",
@@ -46,7 +46,7 @@ let libros = [
     Ubicación: "Estantería 2",
     Fecha_Publicación: "1985",
     Editorial:"Usborne",
-    Páginas: "368",
+    Páginas: 368,
     Dimensiones: "12 x 18 cm",
     Peso: "400 g"
     },
@@ -55,7 +55,7 @@ let libros = [
     Autor: "Patrick Rothfuss",
     Género: "Fantasía épica",
     Idioma: "Español",
-    Precio: "$23.00",
+    Precio: 23.00,
     Formato: "Pasta dura",
     ISBN: "978-84-450-7701-3",
     Descripción: "La historia de Kvothe, un joven músico y mago, contada en retrospectiva.",
@@ -63,7 +63,7 @@ let libros = [
     Ubicación: "Fantasía y Ciencia Ficción",
     Fecha_Publicación: "2007",
     Editorial:"Usborne",
-    Páginas: "864",
+    Páginas: 864,
     Dimensiones: "16 x 24 cm",
     Peso: "900 g"
 
@@ -73,15 +73,15 @@ let libros = [
     Autor: "Paula Hawkins",
     Género: "Thriller psicológico",
     Idioma: "Español",
-    Precio:" $16.00",
+    Precio: 16.00,
     Formato: "Tapa blanda",
     ISBN: "978-84-397-3037-7",
     Descripción: "Una mujer obsesionada con una pareja que ve desde el tren se ve envuelta en un misterio.",
     Estado: "Nuevo",
     Ubicación: "Mejores Ventas",
-    Fecha_Publicación:" 2015",
+    Fecha_Publicación:"2015",
     Editorial:"Usborne",
-    Páginas: "496",
+    Páginas: 496,
     Dimensiones: "14 x 21 cm",
     Peso: "600 g"
     },
@@ -90,7 +90,7 @@ let libros = [
     Autor: "Ernest Cline",
     Género: "Ciencia ficción",
     Idioma: "Español",
-    Precio: "$19.00",
+    Precio: 19.00,
     Formato: "Tapa blanda",
     ISBN: "978-84-450-7628-3",
     Descripción: "En un futuro distópico, un joven se sumerge en un mundo virtual para encontrar un tesoro oculto.",
@@ -98,7 +98,7 @@ let libros = [
     Ubicación: "Ciencia Ficción",
     Fecha_Publicación: "2011",
     Editorial: "Ediciones B",
-    Páginas: "464",
+    Páginas: 464,
     Dimensiones: "15 x 22 cm",
     Peso: "600 g "
     },
@@ -107,7 +107,7 @@ let libros = [
     Autor: "Suzanne Collins",
     Género: "Distopía",
     Idioma: "Español",
-    Precio: "$18.00",
+    Precio: 18.00,
     Formato: "Tapa blanda",
     ISBN: "978-84-9867-853-7",
     Descripción: "En un futuro distópico, jóvenes son obligados a participar en un juego mortal televisado.",
@@ -115,7 +115,7 @@ let libros = [
     Ubicación: "Distopías y Ciencia Ficción",
     Fecha_Publicación: "2008",
     Editorial: "Ediciones B",
-    Páginas: "416",
+    Páginas: 416,
     Dimensiones: "13 x 20 cm",
     Peso: "500 g" 
     },
@@ -124,15 +124,15 @@ let libros = [
     Autor: "Stieg Larsson",
     Género: "Thriller",
     Idioma: "Español",
-    Precio: "$20.00",
+    Precio: 20.00,
     Formato: "Tapa dura",
     ISBN: "978-84-397-2678-3",
     Descripción: "La primera entrega de la trilogía Millenium, una intriga de misterio y corrupción.",
-    Estado:" Nuevo",
+    Estado:"Nuevo",
     Ubicación: "Novelas Policiacas",
     Fecha_Publicación: "2005",
     Editorial: "Ediciones B",
-    Páginas: "672",
+    Páginas: 672,
     Dimensiones: "16 x 24 cm",
     Peso: "900 g "  
     },
@@ -141,7 +141,7 @@ let libros = [
     Autor: "Ernest Hemingway",
     Género: "Novela corta",
     Idioma: "Español",
-    Precio: "$9.00",
+    Precio: 9.00,
     Formato: "Tapa blanda",
     ISBN: "978-84-322-0857-6",
     Descripción: "La historia de un pescador cubano y su batalla épica con un pez gigante en alta mar.",
@@ -149,7 +149,7 @@ let libros = [
     Ubicación: "Sección de Clásicos",
     Fecha_Publicación: "1952",
     Editorial: "Ediciones B",
-    Páginas: "128",
+    Páginas: 128,
     Dimensiones: "12 x 18 cm",
     Peso: "200 g"
     },
@@ -158,7 +158,7 @@ let libros = [
     Autor: "Cormac McCarthy",
     Género: "Novela postapocalíptica",
     Idioma: "Español",
-    Precio: "$16.00",
+    Precio: 16.00,
     Formato: "Pasta blanda",
     ISBN: "978-84-397-2492-5",
     Descripción: "Un padre y su hijo viajan por un paisaje desolado en busca de un lugar seguro.",
@@ -166,7 +166,7 @@ let libros = [
     Ubicación: "Sección de Aventuras",
     Fecha_Publicación: "2006",
     Editorial: "Ediciones B",
-    Páginas: "256",
+    Páginas: 256,
     Dimensiones: "13 x 20 cm",
     Peso: "400 g"
     },
@@ -175,24 +175,24 @@ let libros = [
     Autor: "Tom Wolfe",
     Género: "Novela satírica",
     Idioma: "Español",
-    Precio:" $18.00",
+    Precio: 18.00,
     Formato: "Tapa blanda",
     ISBN: "978-84-339-1452-4",
     Descripción: "La historia de un hombre adinerado cuya vida se desmorona tras un accidente de tráfico.",
-    Estado:" Nuevo",
+    Estado:"Nuevo",
     Ubicación: "Ficción Contemporánea",
-    Fecha_Publicación:" 1987",
+    Fecha_Publicación:"1987",
     Editorial: "Anagrama",
-    Páginas: "800",
+    Páginas: 800,
     Dimensiones: "15 x 23 cm",
-    Peso:" 900 g"
+    Peso:"900 g"
     },
     {
     Título: "La ciudad y los perros",
     Autor: "Mario Vargas Llosa",
     Género: "Novela",
     Idioma: "Español",
-    Precio: "$17.00",
+    Precio: 17.00,
     Formato: "Pasta blanda",
     ISBN: "978-84-397-0287-8",
     Descripción: "La historia de un grupo de estudiantes en un colegio militar en Lima y su lucha por la supervivencia.",
@@ -200,7 +200,7 @@ let libros = [
     Ubicación: "Sección de Novelas Latinoamericanas",
     Fecha_Publicación: "1963",
     Editorial: "Anagrama",
-    Páginas: "496",
+    Páginas: 496,
     Dimensiones: "14 x 21 cm",
     Peso: "600 g"
     },
@@ -209,7 +209,7 @@ let libros = [
     Autor: "Veronica Roth",
     Género: "Distopía, Ciencia ficción",
     Idioma: "Español",
-    Precio: "$15.00",
+    Precio: 15.00,
     Formato: "Tapa blanda",
     ISBN: "978-84-272-0213-5",
     Descripción:" En un mundo dividido en facciones basadas en virtudes humanas,Tris Prior descubre un peligroso secreto y debe decidir en quién confiar.",
@@ -217,7 +217,7 @@ let libros = [
     Ubicación: "Distopías y Ciencia Ficción",
     Fecha_Publicación: "2011",
     Editorial: "Anagrama",
-    Páginas: "464",
+    Páginas: 464,
     Dimensiones: "15 x 22 cm",
     Peso: "500 g"
     },
@@ -226,7 +226,7 @@ let libros = [
     Autor: "Veronica Roth",
     Género: "Distopía, Ciencia ficción",
     Idioma: "Español",
-    Precio: "$16.00",
+    Precio: 16.00,
     Formato: "Tapa blanda",
     ISBN: "978-84-272-0214-2",
     Descripción: "Tris Prior debe enfrentarse a las consecuencias de sus decisiones mientras una guerra se desata entre las facciones.",
@@ -234,7 +234,7 @@ let libros = [
     Ubicación: "Distopías y Ciencia Ficción",
     Fecha_Publicación: "2012",
     Editorial: "Anagrama",
-    Páginas: "464",
+    Páginas: 464,
     Dimensiones: "15 x 22 cm",
     Peso: "500 g"
     },
@@ -243,7 +243,7 @@ let libros = [
     Autor: "Veronica Roth",
     Género: "Distopía, Ciencia ficción",
     Idioma: "Español",
-    Precio: "$17.00",
+    Precio: 17.00,
     Formato: "Tapa blanda",
     ISBN:" 978-84-272-0215-9",
     Descripción: "Tris y Cuatro descubren verdades sorprendentes sobre su mundo y deben decidir cómo actuar frente a la revelación de una nueva realidad.",
@@ -251,7 +251,7 @@ let libros = [
     Ubicación: "Distopías y Ciencia Ficción",
     Fecha_Publicación: "2013",
     Editorial: "Anagrama",
-    Páginas: "496",
+    Páginas: 496,
     Dimensiones: "15 x 22 cm",
     Peso: "500 g"
     },
@@ -260,7 +260,7 @@ let libros = [
     Autor: "Cassandra Clare",
     Género: "Fantasía urbana",
     Idioma: "Español",
-    Precio: "$20.00",
+    Precio: 20.00,
     Formato: "Tapa blanda",
     ISBN: "978-84-253-4194-8",
     Descripción: "Clary Fray descubre un mundo oculto lleno de demonios y cazadores de sombras.",
@@ -268,7 +268,7 @@ let libros = [
     Ubicación: "Fantasía y Aventura",
     Fecha_Publicación: "2007",
     Editorial: "Destino",
-    Páginas: "512",
+    Páginas: 512,
     Dimensiones: "14 x 21 cm",
     Peso: "700 g"
     },
@@ -277,15 +277,15 @@ let libros = [
     Autor: "Cassandra Clare",
     Género: "Fantasía urbana",
     Idioma: "Español",
-    Precio: "$20.00",
+    Precio: 20.00,
     Formato: "Tapa blanda",
     ISBN: "978-84-253-4195-5",
     Descripción: "Clary continúa su lucha contra los demonios mientras descubre más sobre su pasado.",
     Estado: "Nuevo",
     Ubicación: "Fantasía y Aventura",
-    Fecha_Publicación:" 2008",
+    Fecha_Publicación:"2008",
     Editorial: "Destino",
-    Páginas: "464",
+    Páginas: 464,
     Dimensiones: "14 x 21 cm",
     Peso: "650 g"
     },
@@ -294,15 +294,15 @@ let libros = [
     Autor: "Cassandra Clare",
     Género: "Fantasía urbana",
     Idioma: "Español",
-    Precio: "$22.00",
+    Precio: 22.00,
     Formato: "Tapa blanda",
     ISBN: "978-84-253-4196-2",
     Descripción: "Clary debe viajar a la ciudad ancestral de los cazadores de sombras para salvar a su madre.",
-    Estado:" Nuevo",
+    Estado:"Nuevo",
     Ubicación: "Fantasía y Aventura",
     Fecha_Publicación: "2009",
     Editorial: "Destino",
-    Páginas: "544",
+    Páginas: 544,
     Dimensiones: "14 x 21 cm",
     Peso: "700 g"
     },
@@ -311,7 +311,7 @@ let libros = [
     Autor: "Cassandra Clare",
     Género: "Fantasía urbana",
     Idioma: "Español",
-    Precio: "$21.00",
+    Precio: 21.00,
     Formato: "Tapa blanda",
     ISBN:" 978-84-253-4197-9",
     Descripción: "La paz parece estar a la vista, pero nuevas amenazas surgen y Clary debe enfrentarlas.",
@@ -319,7 +319,7 @@ let libros = [
     Ubicación: "Fantasía y Aventura",
     Fecha_Publicación: "2011",
     Editorial: "Destino",
-    Páginas: "432",
+    Páginas: 432,
     Dimensiones: "14 x 21 cm",
     Peso: "600 g"
     },
@@ -328,7 +328,7 @@ let libros = [
     Autor: "Cassandra Clare",
     Género: "Fantasía urbana",
     Idioma: "Español",
-    Precio: "$21.00",
+    Precio: 21.00,
     Formato: "Tapa blanda",
     ISBN: "978-84-253-4198-6",
     Descripción: "Clary y sus amigos deben salvar a Jace de una influencia maligna que lo controla.",
@@ -336,74 +336,74 @@ let libros = [
     Ubicación: "Fantasía y Aventura",
     Fecha_Publicación: "2012",
     Editorial: "Destino",
-    Páginas: "544",
+    Páginas: 544,
     Dimensiones: "14 x 21 cm",
     Peso: "700 g " 
     }
 ];
-let continuar="si",menu;
-while (continuar === "si") {
-menu="MENU\n"
-menu+="1- Mostrar la pila de libros\n"
-menu+="2- Agregar un nuevo libro a la pila\n"
-menu+="3- Borrar un libro de la pila de libros\n\n"
-menu+="Ingrese el numero de lo que desea hacer"
-let decision=parseInt(prompt(menu));
-switch (decision) {
-    case 1:
-        libros.forEach((libro,index)=>{
-            console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
-            + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
-            + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
-            + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
-            + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
-        })
-    break;
-    case 2:
-        let nuevoLibro = {
-            Título: prompt("ingresa el titulo del libro"),
-            Autor: prompt("ingresa el autor del libro"),
-            Género: prompt("ingresa el genero del libro"),
-            Idioma: prompt("ingresa el idioma del libro"),
-            Precio:prompt("ingresa el precio del libro"),
-            Formato: prompt("ingresa el formato del libro"),
-            ISBN: prompt("ingresa el isbn del libro"),
-            Descripción: prompt("ingresa la descripcion del libro"),
-            Estado: prompt("ingresa el estado del libro"),
-            Ubicación: prompt("ingresa la ubicaion del libro"),
-            Fecha_Publicación: prompt("ingresa la fecha de publicacion del libro "),
-            Editorial: prompt("ingresa la editorial del libro"),
-            Páginas:prompt("ingresa las paginas del libro"),
-            Dimensiones: prompt("ingresa las dimensiones del libro"),
-            Peso: prompt("ingresa el peso del libro")
-        }
-        libros.push(nuevoLibro)
-        console.log("agregado con exito");
-        libros.forEach((libro,index)=>{
-        console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
-            + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
-            + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
-            + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
-            + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
-        })
-    break;
-    case 3:
-        let indice=parseInt(prompt("ingresa el numero de el libro que quieres borrar"))
-        libros.splice(indice, 1)
-        console.log("borrado con exito");
-        libros.forEach((libro,index)=>{
-            console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
-            + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
-            + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
-            + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
-            + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
-        })
-    break;
-    default:
-        break;
-    }
-continuar= prompt("Deseas continuar si/no")
-}
+// let continuar="si",menu;
+// while (continuar === "si") {
+// menu="MENU\n"
+// menu+="1- Mostrar la pila de libros\n"
+// menu+="2- Agregar un nuevo libro a la pila\n"
+// menu+="3- Borrar un libro de la pila de libros\n\n"
+// menu+="Ingrese el numero de lo que desea hacer"
+// let decision=parseInt(prompt(menu));
+// switch (decision) {
+//     case 1:
+//         libros.forEach((libro,index)=>{
+//             console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
+//             + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
+//             + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
+//             + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
+//             + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
+//         })
+//     break;
+//     case 2:
+//         let nuevoLibro = {
+//             Título: prompt("ingresa el titulo del libro"),
+//             Autor: prompt("ingresa el autor del libro"),
+//             Género: prompt("ingresa el genero del libro"),
+//             Idioma: prompt("ingresa el idioma del libro"),
+//             Precio:prompt("ingresa el precio del libro"),
+//             Formato: prompt("ingresa el formato del libro"),
+//             ISBN: prompt("ingresa el isbn del libro"),
+//             Descripción: prompt("ingresa la descripcion del libro"),
+//             Estado: prompt("ingresa el estado del libro"),
+//             Ubicación: prompt("ingresa la ubicaion del libro"),
+//             Fecha_Publicación: prompt("ingresa la fecha de publicacion del libro "),
+//             Editorial: prompt("ingresa la editorial del libro"),
+//             Páginas:prompt("ingresa las paginas del libro"),
+//             Dimensiones: prompt("ingresa las dimensiones del libro"),
+//             Peso: prompt("ingresa el peso del libro")
+//         }
+//         libros.push(nuevoLibro)
+//         console.log("agregado con exito");
+//         libros.forEach((libro,index)=>{
+//         console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
+//             + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
+//             + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
+//             + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
+//             + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
+//         })
+//     break;
+//     case 3:
+//         let indice=parseInt(prompt("ingresa el numero de el libro que quieres borrar"))
+//         libros.splice(indice, 1)
+//         console.log("borrado con exito");
+//         libros.forEach((libro,index)=>{
+//             console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
+//             + " Genero: " + (libro.Género) + " Idioma: " + (libro.Idioma) + " Precio: " + (libro.Precio) 
+//             + " Formato: " + (libro.Formato) + " ISBN: " + (libro.ISBN) + " Descripcion: " + (libro.Descripción) 
+//             + " Estado: " + (libro.Estado) + " Ubicacion:" + (libro.Ubicación) + " Fecha de publicacion: " + (libro.Fecha_Publicación)
+//             + " Editorial: " + (libro.Editorial) + "Paginas: " + (libro.Páginas) + " Dimensiones: "  + (libro.Dimensiones + " Peso: "  + (libro.Peso))) ;
+//         })
+//     break;
+//     default:
+//         break;
+//     }
+// continuar= prompt("Deseas continuar si/no")
+// }
 
 // MANEJO DE ARRAY METHODS
 let titulo = libros.map((libro)=>{
@@ -506,3 +506,24 @@ titulo = libros.map((libro)=>{
 }
 )
 console.table(titulo)
+
+// Manejo de Array Methods + spreed operator.
+let librosConDescuentos = libros.map((libros)=>{
+    return{
+        ...libros,
+        Descuento:20,
+    }
+}
+)
+console.table(librosConDescuentos)
+
+let descuento =librosConDescuentos.map((libro)=>{
+    return{
+        Titulo: libro.Título,
+        Autor: libro.Autor,
+        Editorial:libro.Editorial,
+        Precio: libro.Precio,
+        Descuento: libro.Descuento
+    }
+});
+console.table(descuento)
