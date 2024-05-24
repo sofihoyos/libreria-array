@@ -545,5 +545,5 @@ let librosConMayorPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas)
 console.table(librosConMayorPaginas);
 
 // Manejo de Array methods sort()
-// let librosConMayorPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas);
-// console.table(librosConMayorPaginas)
+let librosConMayorNumeroPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas);
+console.table(librosConMayorNumeroPaginas)
