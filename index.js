@@ -413,8 +413,7 @@ let titulo = libros.map((libro)=>{
         Editorial: libro.Editorial,
         Precio: libro.Precio
     }
-}
-)
+})
 console.table(titulo)
 
 titulo = libros.map((libro)=>{
@@ -517,7 +516,7 @@ let librosConDescuentos = libros.map((libros)=>{
 )
 console.table(librosConDescuentos)
 
-let descuento =librosConDescuentos.map((libro)=>{
+let descuento = librosConDescuentos.map((libro)=>{
     return{
         Titulo: libro.Título,
         Autor: libro.Autor,
@@ -526,4 +525,23 @@ let descuento =librosConDescuentos.map((libro)=>{
         Descuento: libro.Descuento
     }
 });
-console.table(descuento)
+console.table(descuento);
+
+// Manejo de Array methods Filter()
+let librosCaros = libros.filter((libro)=>{
+    return libro.Precio > 50;
+});
+console.table(librosCaros);
+
+let librosConMayorPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas);
+console.table(librosConMayorPaginas)
+
+let librosPaginas = librosConMayorPaginas.map((libro)=>{
+    return{
+        Titulo: libro.Título,
+        Autor: libro.Autor,
+        Editorial:libro.Editorial,
+        Paginas: libro.Páginas
+    }
+});
+console.table(librosPaginas);
