@@ -533,10 +533,8 @@ let librosCaros = libros.filter((libro)=>{
 });
 console.table(librosCaros);
 
-let librosConMayorPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas);
-console.table(librosConMayorPaginas)
-
-let librosPaginas = librosConMayorPaginas.map((libro)=>{
+let librosConMayorPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas)
+.map((libro)=>{
     return{
         Titulo: libro.Título,
         Autor: libro.Autor,
@@ -544,4 +542,8 @@ let librosPaginas = librosConMayorPaginas.map((libro)=>{
         Paginas: libro.Páginas
     }
 });
-console.table(librosPaginas);
+console.table(librosConMayorPaginas);
+
+// Manejo de Array methods sort()
+// let librosConMayorPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas);
+// console.table(librosConMayorPaginas)
