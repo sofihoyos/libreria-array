@@ -510,7 +510,7 @@ switch (decision) {
         case 1:
         // Manejo de Array methods Filter()
         let librosCaros = libros.filter((libro)=>{
-            return libro.Precio > 50;
+            return libro.Precio > 30;
         });
         console.table(librosCaros);
         let librosConMayorPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas)
