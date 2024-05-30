@@ -348,7 +348,7 @@ menu+="1- Mostrar la pila de libros\n"
 menu+="2- Agregar un nuevo libro a la pila\n"
 menu+="3- Borrar un libro de la pila de libros\n"
 menu+="4- Listar libros\n"
-menu+="5- los resumenes de este segmento\n\n"
+menu+="5- Resumenes de este segmento\n\n"
 menu+="Ingrese el numero de lo que desea hacer"
 let decision=parseInt(prompt(menu));
 switch (decision) {
@@ -390,8 +390,7 @@ switch (decision) {
         })
     break;
     case 3:
-        let indice=parseInt(prompt("ingresa el numero de el libro que quieres borrar"))
-        libros.splice(indice, 1)
+        libros.pop()
         console.log("borrado con exito");
         libros.forEach((libro,index)=>{
             console.log("libro " + (index+1) +" Titulo: "+  (libro.Título) +   " Autor: " +   (libro.Autor) 
@@ -402,6 +401,13 @@ switch (decision) {
         })
     break;
     case 4:
+        menu="MENU\n"
+        menu+="1- Manejo de Array Methods\n"
+        menu+="2-Manejo de Array Methods + spreed operator.\n\n"
+        menu+="Ingrese el numero de lo que desea hacer"
+        let decision2=parseInt(prompt(menu));
+        switch (decision2) {
+        case 1:
         // MANEJO DE ARRAY METHODS
         let titulo = libros.map((libro)=>{
             return{
@@ -411,6 +417,7 @@ switch (decision) {
                 Precio: libro.Precio
             }})
             console.table(titulo)
+  
         titulo = libros.map((libro)=>{
             return{
                 Título: libro.Título,
@@ -471,24 +478,36 @@ switch (decision) {
                 Género: libro.Género
             }})
             console.table(titulo)
+                break;
+        case 2: 
         // Manejo de Array Methods + spreed operator.
         let librosConDescuentos = libros.map((libros)=>{
             return{
                 ...libros,
-                Descuento:20,
+                descuento:20,
             }})
             console.table(librosConDescuentos)
-        let descuento = librosConDescuentos.map((libro)=>{
+        let librosResumenDescuento = librosConDescuentos.map((libro)=>{
             return{
                 Titulo: libro.Título,
                 Autor: libro.Autor,
                 Editorial:libro.Editorial,
                 Precio: libro.Precio,
-                Descuento: libro.Descuento
+                Descuento: libro.descuento
             }});
-            console.table(descuento);
+            console.table(librosResumenDescuento)
+            break;
+        }
     break;
     case 5:
+        menu="MENU\n"
+        menu+="1- Manejo de Array methods Filter()\n"
+        menu+="2- Manejo de Array methods sort()\n"
+        menu+="3- Manejo Array Methods encadenados.\n\n"
+        menu+="Ingrese el numero de lo que desea hacer"
+        let decision3=parseInt(prompt(menu));
+        switch (decision3) {
+        case 1:
         // Manejo de Array methods Filter()
         let librosCaros = libros.filter((libro)=>{
             return libro.Precio > 50;
@@ -503,9 +522,13 @@ switch (decision) {
                 Paginas: libro.Páginas
             }});
             console.table(librosConMayorPaginas);
+                break;
+        case 2:
         // Manejo de Array methods sort()
         let librosConMayorNumeroPaginas=libros.sort((a, b)=> b.Páginas - a.Páginas);
         console.table(librosConMayorNumeroPaginas)
+        break;
+        case 3:
         // Manejo Array Methods encadenados.
         let librosCarosPorTitulo=libros.filter((libro)=>{
             return libro.Precio > 11;
@@ -552,7 +575,12 @@ switch (decision) {
             .sort((a, b)=> b.Páginas - a.Páginas);
             console.table(LibrosResumenAltoPaginas)
     break;
+            default:
+                break;
+        }
+        break;
     default:
+        console.log("el numero ingresado no esta en el rango necesitado");
         break;
     }
 continuar= prompt("Deseas continuar si/no")
