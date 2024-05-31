@@ -348,7 +348,8 @@ menu+="1- Mostrar la pila de libros\n"
 menu+="2- Agregar un nuevo libro a la pila\n"
 menu+="3- Borrar un libro de la pila de libros\n"
 menu+="4- Listar libros\n"
-menu+="5- Resumenes de este segmento\n\n"
+menu+="5- Resumenes de este segmento\n"
+menu+="6- Funcionalidades de este segmento\n\n"
 menu+="Ingrese el numero de lo que desea hacer"
 let decision=parseInt(prompt(menu));
 switch (decision) {
@@ -530,6 +531,7 @@ switch (decision) {
         break;
         case 3:
         // Manejo Array Methods encadenados.
+        // Mayores de 11 dolares
         let librosCarosPorTitulo=libros.filter((libro)=>{
             return libro.Precio > 11;
         })
@@ -541,9 +543,9 @@ switch (decision) {
             }}) 
             .sort((a, b)=> b.Precio - a.Precio)
             console.table(librosCarosPorTitulo)
-        //
+        // libros qeu tengan menos de 256
         let librosConMenorPaginas=libros.filter((libro)=>{
-            return libro.Páginas > 100;
+            return libro.Páginas > 256;
         })
         .map ((libro) => {
             return{
@@ -553,7 +555,7 @@ switch (decision) {
                 Paginas: libro.Páginas
             }}) 
             console.table(librosConMenorPaginas)
-        //
+        // libros mayores a 20
         let librosCarosPrecio=libros.filter((libro)=>{
             return libro.Precio > 20;})
             .map ((libro) => {
@@ -564,7 +566,7 @@ switch (decision) {
                 }}) 
             .sort((a, b)=> b.Precio - a.Precio)
             console.table(librosCarosPrecio);
-        //
+        // libros por numero mas alto de paginas
         let LibrosResumenAltoPaginas= libros.map ((libro) => {
             return{
                 Titulo: libro.Título,
@@ -576,6 +578,100 @@ switch (decision) {
             console.table(LibrosResumenAltoPaginas)
     break;
             default:
+                break;
+        }
+        break;
+    case 6:
+        menu="MENU\n"
+        menu+="1- Un objeto del array por titulo\n"
+        menu+="2- Un objeto del array por autor\n"
+        menu+="3- Un objeto del array por fecha de publicacion\n"
+        menu+="4- Un objeto del array por genero\n"
+        menu+="5- Un objeto del array por idioma\n"
+        menu+="6-10 iteracciones de busqueda\n\n"
+        menu+="Ingrese el numero de lo que desea hacer"
+        let decision4=parseInt(prompt(menu));
+        switch (decision4) {
+            case 1:
+                let libroTitulo = libros.find((libro) => {
+                    return libro.Título === "La chica del tren";
+                });
+                console.table(libroTitulo)
+                break;
+            case 2:
+                let libroAutor = libros.find((libro) => {
+                    return libro.Autor === "Tom Wolfe";
+                });
+                console.table(libroAutor)
+                break;
+            case 3:
+                let libroFechaPublicacion = libros.find((libro) => {
+                    return libro.Fecha_Publicación === "1963";
+                });
+                console.table(libroFechaPublicacion)
+                break;
+            case 4:
+                let libroGenero = libros.find((libro) => {
+                    return libro.Género === "Fantasía urbana";
+                });
+                console.table(libroGenero)
+                break;
+            case 5:
+                let libroIdioma = libros.find((libro) => {
+                    return libro.Idioma === "Español";
+                });
+                console.table(libroIdioma)
+                break;
+            case 6:
+                let libroPrecio = libros.find((libro) => {
+                    return libro.Precio === 20.00;
+                });
+                console.table(libroPrecio)
+                //
+                let libroFormato = libros.find((libro) => {
+                    return libro.Formato === "Tapa blanda";
+                });
+                console.table(libroFormato)
+                //
+                let libroIsbn = libros.find((libro) => {
+                    return libro.ISBN === "978-84-272-0213-5";
+                });
+                console.table(libroIsbn)
+                //
+                let libroEstado = libros.find((libro) => {
+                    return libro.Estado === "Nuevo";
+                });
+                console.table(libroEstado)
+                //
+                let libroUbicacion = libros.find((libro) => {
+                    return libro.Ubicación === "Sección de Novelas Latinoamericanas";
+                });
+                console.table(libroUbicacion)
+                //
+                let libroEditorial = libros.find((libro) => {
+                    return libro.Editorial === "Anagrama";
+                });
+                console.table(libroEditorial)
+                //
+                let libroPaginas = libros.find((libro) => {
+                    return libro.Páginas === 256;
+                });
+                console.table(libroPaginas)
+                //
+                let libroDimensiones = libros.find((libro) => {
+                    return libro.Dimensiones ===  "14.7 x 2.7 x 20.4 cm" ;
+                });
+                console.table(libroDimensiones)
+                //
+                let libroGenero2 = libros.find((libro) => {
+                    return libro.Género === "Romance";
+                });
+                console.table(libroGenero2)
+                //
+                let libroPeso = libros.find((libro) => {
+                    return libro.Peso === "600 g";
+                });
+                console.table(libroPeso)
                 break;
         }
         break;
